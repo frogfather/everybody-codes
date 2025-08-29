@@ -23,13 +23,13 @@ const App = () => {
     <div className="main-app">
       <Select options={options} onChange={setOption}/>
       <div className="puzzle-wrapper">
-        <div className="left">
-          <div>
+        <div className="left" key="1">
+          <div key="2">
           {selectedOption == 'quest1' && <Quest1Description/>}
           {selectedOption == 'quest2' && <Quest2Description/>}
           </div>
         </div>
-        <div className="right">
+        <div className="right" key="3">
           {selectedOption == 'quest1' && <Quest1/>}
           {selectedOption == 'quest2' && <Quest2/>}
         </div>
